@@ -21,8 +21,12 @@ public class accountService {
         // deduct
         from.setBalance(from.getBalance() - amount);
         repo.save(from);
+// "Transaction failed : Output"
+//        if (true) {
+//            throw new RuntimeException("Transaction Failed!");
+//        }
 
-        if (true) {
+        if (false) {
             throw new RuntimeException("Transaction Failed!");
         }
 
